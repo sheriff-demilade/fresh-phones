@@ -5,7 +5,9 @@ const Header = () => {
   return (
     <Fragment>
       <header className="flex justify-between items-center h-16 px-8 shadow">
-        <Link className="text-lg">LOGO</Link>
+        <Link to="/" className="text-lg">
+          LOGO
+        </Link>
 
         <nav className="main-nav">
           <ul className="flex gap-8 text-lg">

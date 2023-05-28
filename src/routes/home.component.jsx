@@ -1,14 +1,13 @@
 import DirectoryItem from "../components/directory-item.component";
-
-const PHONES_BRAND = ["Iphone", "Samsung", "Infinix", "Tecno"];
+import { PHONES_DATA } from "../phone-data";
 
 const Home = () => {
   return (
-    <div className="container mx-auto mt-20 justify-center flex gap-8">
-      {PHONES_BRAND.map((phoneBrand, idx) => (
-        <DirectoryItem key={idx}>{phoneBrand}</DirectoryItem>
+    <main className="container mx-auto px-8 mt-20 justify-center flex gap-8">
+      {Object.keys(PHONES_DATA).map((brandName, idx) => (
+        <DirectoryItem key={idx} title={brandName} />
       ))}
-    </div>
+    </main>
   );
 };
 

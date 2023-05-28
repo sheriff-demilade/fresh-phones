@@ -1,7 +1,7 @@
-const DirectoryItem = ({ children }) => {
+const DirectoryItem = ({ title }) => {
   return (
-    <div className="p-20 bg-slate-300 shadow-lg hover:shadow transition duration-300">
-      <p className="text-2xl">{children}</p>
+    <div className="p-20 bg-slate-300 shadow-lg hover:shadow-md transition duration-300">
+      <p className="text-2xl text-center">{title}</p>
     </div>
   );
 };
