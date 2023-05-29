@@ -1,13 +1,13 @@
-import Category from "../components/category.component";
-import { PHONES_DATA } from "../phone-data";
+import { Route, Routes } from "react-router-dom";
+import CategoriesPreview from "./categories-preview.component";
+import Category from "./category.component";
 
 const Shop = () => {
   return (
-    <main className="container mx-auto px-32 mt-20">
-      {Object.keys(PHONES_DATA).map((brandName) => (
-        <Category key={brandName} title={brandName} />
-      ))}
-    </main>
+    <Routes>
+      <Route path="/" element={<CategoriesPreview />} />
+      <Route path=":brandName" element={<Category />} />
+    </Routes>
   );
 };
 

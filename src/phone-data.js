@@ -1,16 +1,26 @@
 export const PHONES_DATA = {
-  Iphone: ["Iphone XS max", "Iphone 12 Pro", "Iphone 13 Pro Max", "Iphone 14"],
+  Iphone: [
+    { phoneName: "Iphone XS max", price: 40 },
+    { phoneName: "Iphone 12 Pro", price: 56 },
+    { phoneName: "Iphone 13 Pro Max", price: 72 },
+    { phoneName: "Iphone 14", price: 93 },
+  ],
   Samsung: [
-    "Samsung S22 Ultra",
-    "Samsung A20s",
-    "Samsung Fold 3",
-    "Samsung Note 10",
+    { phoneName: "Samsung S22 Ultra", price: 85 },
+    { phoneName: "Samsung A20s", price: 54 },
+    { phoneName: "Samsung Fold 3", price: 95 },
+    { phoneName: "Samsung Note 10", price: 70 },
   ],
   Infinix: [
-    "Infinix Note 10s",
-    "Infinix Hot 8",
-    "Infinix Hot S",
-    "Infinix Note 20",
+    { phoneName: "Infinix Note 10s", price: 50 },
+    { phoneName: "Infinix Hot 8", price: 35 },
+    { phoneName: "Infinix Hot S", price: 15 },
+    { phoneName: "Infinix Note 20", price: 65 },
   ],
-  Tecno: ["Tecno Pova", "Tecno Carmon", "Tecno Spark", "Tecno Povior"],
+  Tecno: [
+    { phoneName: "Tecno Pova", price: 35 },
+    { phoneName: "Tecno Carmon", price: 58 },
+    { phoneName: "Tecno Spark", price: 29 },
+    { phoneName: "Tecno Povior", price: 39 },
+  ],
 };
