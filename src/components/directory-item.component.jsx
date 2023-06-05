@@ -1,16 +1,18 @@
 import { useNavigate } from "react-router-dom";
 
-const DirectoryItem = ({ title }) => {
+const DirectoryItem = ({ brand }) => {
+  const { brandName, imageUrl } = brand;
   const navigate = useNavigate();
 
-  const onClickHandler = () => navigate(`shop/${title}`);
+  const onClickHandler = () => navigate(`shop/${brandName}`);
 
   return (
     <div
-      className="p-20 bg-slate-200 hover:bg-slate-300 shadow-lg hover:shadow-md transition duration-400"
+      className="shadow-md rounded-lg overflow-hidden hover:shadow-lg transition duration-300 cursor-pointer"
       onClick={onClickHandler}
     >
-      <p className="text-2xl text-center">{title}</p>
+      <img src={imageUrl} alt={brandName} className="w-full" />
+      <p className="text-3xl text-center text-slate-600 py-8">{brandName}</p>
     </div>
   );
 };

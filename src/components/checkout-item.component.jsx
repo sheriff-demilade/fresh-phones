@@ -6,7 +6,7 @@ import {
 } from "../store/cart/cart.slice";
 
 const CheckoutItem = ({ cartItem }) => {
-  const { phoneName, quantity } = cartItem;
+  const { phoneName, quantity, imageUrl } = cartItem;
 
   const dispatch = useDispatch();
 
@@ -16,7 +16,8 @@ const CheckoutItem = ({ cartItem }) => {
     dispatch(reduceCartItemQuantity(cartItem));
 
   return (
-    <div className="bord border-b-2 flex gap-8">
+    <div className="bord border-b-2 mb-6 flex gap-8 items-center">
+      <img src={imageUrl} alt={phoneName} className="h-24" />
       <h3>{phoneName}</h3>
       <span className="text-lg font-bold" onClick={decreaseQuantityHandler}>
         -

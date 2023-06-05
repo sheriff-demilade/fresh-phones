@@ -1,20 +1,26 @@
 import { useDispatch } from "react-redux";
 import { addToCart } from "../store/cart/cart.slice";
 
-const CategoryItem = ({ phoneDetail: { phoneName, price } }) => {
+const CategoryItem = ({ phoneDetail }) => {
+  const { imageUrl, phoneName, price } = phoneDetail;
   const dispatch = useDispatch();
 
   const onClickHandler = () => {
-    dispatch(addToCart({ phoneName, price }));
+    dispatch(addToCart(phoneDetail));
   };
 
   return (
     <div
-      className=" py-16 bg-blue-200 hover:bg-blue-300 shadow-lg hover:shadow-md transition duration-300"
+      className="max-w-sm shadow-md rounded overflow-hidden hover:shadow-lg transition duration-300 cursor-pointer"
       onClick={onClickHandler}
     >
-      <p className="text-2xl text-center mb-4">{phoneName}</p>
-      <p className="text-xl text-center">${price}</p>
+      <img src={imageUrl} alt={phoneName} />
+      <div className="px-6 py-4">
+        <h2 className="text-lg font-semibold text-purple-400 mb-2">
+          {phoneName}
+        </h2>
+        <p className="text-xl font-semibold text-blue-400 mb-2">${price}</p>
+      </div>
     </div>
   );
 };
