@@ -5,7 +5,10 @@ import { PHONES_DATA } from "../phone-data";
 const CategoryPreview = ({ title }) => {
   return (
     <div className="mb-12">
-      <Link to={title} className="inline-block text-xl mb-6 uppercase ">
+      <Link
+        to={title}
+        className="inline-block text-xl mb-6 uppercase hover:text-blue-400 transition duration-300 "
+      >
         {title}
       </Link>
 

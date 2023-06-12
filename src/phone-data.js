@@ -4,13 +4,13 @@ export const PHONES_DATA = {
       phoneName: "Iphone XS max",
       price: 40,
       imageUrl:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXiiLTiz-jBWgrDMsURYWdR4JF6fh_rcNXRQ&usqp=CAU",
+        "https://images.unsplash.com/photo-1556656793-08538906a9f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGlwaG9uZSUyMHhzJTIwbWF4fGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60",
     },
     {
       phoneName: "Iphone 12 Pro",
       price: 56,
       imageUrl:
-        "https://pixabay.com/get/gb96dc2852b6927a74ae142266e859c355c4bb1a5fe3f599a9603d3cbe7b36c92214560f1a8a43c9b527ab9b039658754aa9aa231911bec0691958e99003d32e0_640.jpg",
+        "https://images.unsplash.com/photo-1617997455403-41f333d44d5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fGlwaG9uZSUyMDEyJTIwcHJvfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60",
     },
     {
       phoneName: "Iphone 13 Pro Max",
@@ -22,7 +22,7 @@ export const PHONES_DATA = {
       phoneName: "Iphone 14",
       price: 93,
       imageUrl:
-        "https://pixabay.com/get/g77186db9a98a3cb6a13dd9e143836866622864b5c4577effa2299e6a07411fa47f5e66802fbf52e9b6dd5007df192d9af65a3a8f2c7142f429e6a11e842856e2_640.jpg",
+        "https://images.unsplash.com/photo-1678652197831-2d180705cd2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aXBob25lJTIwMTR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60",
     },
   ],
   Samsung: [
