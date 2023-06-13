@@ -17,7 +17,7 @@ const BrandItem = ({ idx, brand: { brandName, brandImage } }) => {
         </Fragment>
       ) : (
         <Fragment>
-          <BrandImage brandImage={brandImage} onClickHandler={onClickHandler} />{" "}
+          <BrandImage brandImage={brandImage} onClickHandler={onClickHandler} />
           <BrandDetails brandName={brandName} />
         </Fragment>
       )}
