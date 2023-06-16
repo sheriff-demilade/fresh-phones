@@ -2,7 +2,7 @@ const HeroSection = () => {
   return (
     <section className="pt-16 pb-20 bg-blue-50">
       <div className="container mx-auto px-8 grid grid-cols-2 gap-24 items-center">
-        <div className="text-gray-700">
+        <div>
           <h2 className="text-4xl font-medium mb-6">
             Lorem ipsum dolor sit amet bonjour elit.
           </h2>

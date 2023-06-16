@@ -11,7 +11,7 @@ const CategoryItem = ({ phoneDetail }) => {
 
   return (
     <div
-      className="max-w-sm shadow-md rounded overflow-hidden hover:shadow-lg transition duration-300 cursor-pointer"
+      className="max-w-sm bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg active:bg-blue-50 transition duration-300 cursor-pointer"
       onClick={onClickHandler}
     >
       <img src={imageUrl} alt={phoneName} />

@@ -1,3 +1,4 @@
+import PhonesSection from "../components/phones-section.component";
 import BrandsSection from "../components/brands-section.component";
 import FeaturedInSection from "../components/featured-in-section.component";
 import FeaturesSection from "../components/features-section";
@@ -10,10 +11,11 @@ import HeroSection from "../components/hero-section.component";
 
 const Home = () => {
   return (
-    <main className="">
+    <main className=" text-gray-600">
       <HeroSection />
       <FeaturedInSection />
       <BrandsSection />
+      <PhonesSection />
       <FeaturesSection />
     </main>
   );
