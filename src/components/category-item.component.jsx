@@ -11,10 +11,16 @@ const CategoryItem = ({ phoneDetail }) => {
 
   return (
     <div
-      className="max-w-sm bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg active:bg-blue-50 transition duration-300 cursor-pointer"
+      className=" group max-w-sm bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg active:bg-blue-50 transition duration-300 cursor-pointer"
       onClick={onClickHandler}
     >
-      <img src={imageUrl} alt={phoneName} />
+      <div className=" overflow-hidden">
+        <img
+          src={imageUrl}
+          alt={phoneName}
+          className="group-hover:scale-105 group-active:scale-100 duration-500"
+        />
+      </div>
       <div className="px-6 py-4">
         <h2 className="text-lg font-semibold text-purple-400 mb-2">
           {phoneName}
