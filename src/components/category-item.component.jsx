@@ -11,7 +11,7 @@ const CategoryItem = ({ phoneDetail }) => {
 
   return (
     <div
-      className=" group max-w-sm bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg active:bg-blue-50 transition duration-300 cursor-pointer"
+      className=" group max-w-sm bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg active:bg-blue-50  duration-300 cursor-pointer"
       onClick={onClickHandler}
     >
       <div className=" overflow-hidden">

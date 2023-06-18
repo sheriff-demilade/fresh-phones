@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import { Link, Outlet } from "react-router-dom";
+import Footer from "../components/footer.component";
 
 const Header = () => {
   return (
@@ -78,6 +79,7 @@ const Header = () => {
       </header>
 
       <Outlet />
+      <Footer />
     </Fragment>
   );
 };
