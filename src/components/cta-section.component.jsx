@@ -17,7 +17,7 @@ function CtaSection() {
               <input
                 type="email"
                 placeholder="me@example.com"
-                className="w-4/5 h-16 px-6 -mr-32 m- rounded-xl text-xl"
+                className="w-4/5 h-16 px-6 -mr-32 m- rounded-xl text-xl outline-none"
               />
               <button className="h-12 w-32 text-xl font-semibold text-white rounded-lg -translate-x-[6px] bg-blue-400 hover:bg-blue-500 duration-300">
                 subscribe

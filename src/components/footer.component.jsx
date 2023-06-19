@@ -33,7 +33,7 @@ const Footer = () => {
           <p className="mb-6 text-lg font-semibold">Contact us</p>
 
           <address className="mb-8 not-italic">
-            224 Voluptatum, Luscuatur Uatujsbsn Lossimus .
+            224 Voluptatum, Luscuatur Uatujsbsn Lossimus.
           </address>
           <a
             href="tel:4152016370"
@@ -51,7 +51,7 @@ const Footer = () => {
         </div>
 
         <div className="justify-self-center">
-          <p className="mb-6 text-lg font-semibold">Contact us</p>
+          <p className="mb-6 text-lg font-semibold">Account</p>
           <ul className="flex flex-col gap-4">
             <li>
               <Link className="duration-300 hover:text-blue-400">
@@ -73,7 +73,7 @@ const Footer = () => {
         </div>
 
         <div className="justify-self-center">
-          <p className="mb-6 text-lg font-semibold">Contact us</p>
+          <p className="mb-6 text-lg font-semibold">Company</p>
           <ul className="flex flex-col gap-4">
             <li>
               <Link className="duration-300 hover:text-blue-400">

@@ -18,14 +18,14 @@ const CategoryItem = ({ phoneDetail }) => {
         <img
           src={imageUrl}
           alt={phoneName}
-          className="group-hover:scale-105 group-active:scale-100 duration-500"
+          className="w-full group-hover:scale-105 group-active:scale-100 duration-500"
         />
       </div>
       <div className="px-6 py-4">
-        <h2 className="text-lg font-semibold text-purple-400 mb-2">
+        <h2 className="text-lg font-semibold text-blue-400 mb-2">
           {phoneName}
         </h2>
-        <p className="text-xl font-semibold text-blue-400 mb-2">${price}</p>
+        <p className="text-xl font-semibold text-blue-300 mb-2">${price}</p>
       </div>
     </div>
   );
