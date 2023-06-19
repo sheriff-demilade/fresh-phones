@@ -39,12 +39,12 @@ const CheckoutItem = ({ cartItem }) => {
         <ion-icon name="add-outline"></ion-icon>
       </button>
 
-      <span
+      <button
         className="text-lg hover:text-blue-400 duration-300 px-10"
         onClick={removeItemHandler}
       >
         remove
-      </span>
+      </button>
     </div>
   );
 };
