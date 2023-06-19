@@ -1,11 +1,17 @@
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { totalQuantity } from "../store/cart/cart.selector";
 import Footer from "../components/footer.component";
+import CartDropdown from "../components/cart-dropdown.component";
 
 const Header = () => {
   const cartItemsQuantity = useSelector(totalQuantity);
+  const [toggleCartDropdown, setToggleCartDropdown] = useState(false);
+
+  const handleClick = () => {
+    setToggleCartDropdown(!toggleCartDropdown);
+  };
 
   return (
     <Fragment>
@@ -53,15 +59,18 @@ const Header = () => {
 
         <ul className="flex items-center  gap-8 tracking-wider text-xs font-semibold text-gray-500 ">
           <li>
-            <Link
-              to="/checkout"
-              className="hover:text-blue-400 transition duration-300 block relative"
-            >
-              <ion-icon name="cart-outline" size="large"></ion-icon>
-              <div className="h-5 w-5 flex justify-center items-center rounded-full absolute -top-1 -right-2 bg-blue-400 text-white text-xs font-medium">
-                {cartItemsQuantity}
+            <div className="relative">
+              <div
+                className="hover:text-blue-400 transition duration-300 block relative"
+                onClick={handleClick}
+              >
+                <ion-icon name="cart-outline" size="large"></ion-icon>
+                <div className="h-5 w-5 flex justify-center items-center rounded-full absolute -top-1 -right-2 bg-blue-400 text-white text-xs font-medium">
+                  {cartItemsQuantity}
+                </div>
               </div>
-            </Link>
+              {toggleCartDropdown && <CartDropdown />}
+            </div>
           </li>
           <li>
             <Link

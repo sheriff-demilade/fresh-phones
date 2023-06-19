@@ -4,7 +4,6 @@ import CheckoutItem from "../components/checkout-item.component";
 
 const Checkout = () => {
   const cartItems = useSelector(cartSelector);
-  console.log(cartItems);
   const total = useSelector(totalPrice);
 
   return (
