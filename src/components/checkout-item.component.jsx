@@ -6,7 +6,7 @@ import {
 } from "../store/cart/cart.slice";
 
 const CheckoutItem = ({ cartItem }) => {
-  const { phoneName, quantity, imageUrl } = cartItem;
+  const { phoneName, price, quantity, imageUrl } = cartItem;
 
   const dispatch = useDispatch();
 
@@ -16,10 +16,12 @@ const CheckoutItem = ({ cartItem }) => {
     dispatch(reduceCartItemQuantity(cartItem));
 
   return (
-    <div className=" flex gap-8 items-center rounded-lg shadow hover:shadow-md duration-300 text-gray-600 bg-white overflow-hidden">
+    <div className=" flex gap-10 items-center rounded-lg shadow hover:shadow-md duration-300 text-gray-600 bg-white overflow-hidden">
       <img src={imageUrl} alt={phoneName} className="h-24 w-36" />
 
-      <h3 className=" text-xl w-64">{phoneName}</h3>
+      <p className=" text-xl w-52">{phoneName}</p>
+
+      <p className=" text-xl mr-10">${price}</p>
 
       <button
         className=" w-10 h-10 rounded-full shadow-md active:shadow  hover:text-blue-400 duration-300"
