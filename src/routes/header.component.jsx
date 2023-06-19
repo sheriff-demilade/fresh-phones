@@ -1,8 +1,12 @@
 import { Fragment } from "react";
 import { Link, Outlet } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { totalQuantity } from "../store/cart/cart.selector";
 import Footer from "../components/footer.component";
 
 const Header = () => {
+  const cartItemsQuantity = useSelector(totalQuantity);
+
   return (
     <Fragment>
       <header className="flex justify-between gap-20 items-center h-16 px-8 bg-blue-50 border border-blue-100">
@@ -33,7 +37,7 @@ const Header = () => {
                 to="/"
                 className="hover:text-blue-400 transition duration-300"
               >
-                ABOUT US
+                TESTIMONIAL
               </Link>
             </li>
             <li>
@@ -51,11 +55,11 @@ const Header = () => {
           <li>
             <Link
               to="/checkout"
-              className="hover:text-blue-400 transition duration-300 inline-block relative"
+              className="hover:text-blue-400 transition duration-300 block relative"
             >
               <ion-icon name="cart-outline" size="large"></ion-icon>
-              <div className="w-4 h-4 rounded-full absolute top-0 right-0 translate-x-1/4 -translate-y-1/5 bg-blue-400 text-white text-xs text-center">
-                3
+              <div className="h-5 w-5 flex justify-center items-center rounded-full absolute -top-1 -right-2 bg-blue-400 text-white text-xs font-medium">
+                {cartItemsQuantity}
               </div>
             </Link>
           </li>

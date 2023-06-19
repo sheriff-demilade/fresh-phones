@@ -13,7 +13,7 @@ function CtaSection() {
               Lorem ipsum dolor sit amet consectetur adipisicing elitnisi
               recusandae iste ex voluptatibus commodi!
             </p>
-            <form action="flex items-center	">
+            <form className="flex items-center">
               <input
                 type="email"
                 placeholder="me@example.com"
