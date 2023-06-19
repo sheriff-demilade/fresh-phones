@@ -16,18 +16,32 @@ const CheckoutItem = ({ cartItem }) => {
     dispatch(reduceCartItemQuantity(cartItem));
 
   return (
-    <div className="bord border-b-2 mb-6 flex gap-8 items-center">
-      <img src={imageUrl} alt={phoneName} className="h-24" />
-      <h3>{phoneName}</h3>
-      <span className="text-lg font-bold" onClick={decreaseQuantityHandler}>
-        -
-      </span>
-      <h3>{quantity}</h3>
-      <span className="text-lg font-bold" onClick={increaseQuantityHandler}>
-        +
-      </span>
-      <span className="text-lg font-bold" onClick={removeItemHandler}>
-        x
+    <div className=" flex gap-8 items-center rounded-lg shadow hover:shadow-md duration-300 text-gray-600 bg-white overflow-hidden">
+      <img src={imageUrl} alt={phoneName} className="h-24 w-36" />
+
+      <h3 className=" text-xl w-64">{phoneName}</h3>
+
+      <button
+        className=" w-10 h-10 rounded-full shadow-md active:shadow  hover:text-blue-400 duration-300"
+        onClick={decreaseQuantityHandler}
+      >
+        <ion-icon name="remove-outline"></ion-icon>
+      </button>
+
+      <p className="text-lg">{quantity}</p>
+
+      <button
+        className=" w-10 h-10 rounded-full shadow-md active:shadow  hover:text-blue-400 duration-300"
+        onClick={increaseQuantityHandler}
+      >
+        <ion-icon name="add-outline"></ion-icon>
+      </button>
+
+      <span
+        className="text-lg hover:text-blue-400 duration-300 px-10"
+        onClick={removeItemHandler}
+      >
+        remove
       </span>
     </div>
   );
