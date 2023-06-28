@@ -9,12 +9,12 @@ const PhonesSection = () => {
         <span className="font-medium tracking-widest text-blue-400 block mb-5">
           PHONES
         </span>
-        <h2 className="text-3xl">
+        <h2 className="sm:text-3xl text-2xl">
           Est provident culpa nobis in nemo mollitia.
         </h2>
       </div>
 
-      <div className="container mx-auto px-8 grid grid-cols-4 gap-x-8  gap-y-20">
+      <div className="container mx-auto px-8 grid sm:grid-cols-4 grid-cols-1 gap-x-8  gap-y-20">
         {Object.values(PHONES_DATA).map((brands) =>
           brands
             .filter((phone, idx) => idx % 2)

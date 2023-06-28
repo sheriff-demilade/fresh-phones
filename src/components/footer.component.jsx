@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="py-20 text-gray-500 bg-blue-50">
-      <div className="container px-8 mx-auto grid grid-cols-4 gap-20">
+      <div className="container px-8 mx-auto grid sm:grid-cols-4 grid-cols-1 gap-20">
         <div className="flex flex-col	justify-between">
           <Link to="/" className="text-3xl  text-blue-300 logo">
             FreshPhones
           </Link>
 
-          <div className="flex gap-6">
+          <div className="flex gap-6 my-8">
             <Link className="duration-300 hover:text-blue-400">
               <ion-icon name="logo-facebook"></ion-icon>
             </Link>
@@ -50,7 +50,7 @@ const Footer = () => {
           </a>
         </div>
 
-        <div className="justify-self-center">
+        <div className="sm:justify-self-center">
           <p className="mb-6 text-lg font-semibold">Account</p>
           <ul className="flex flex-col gap-4">
             <li>
@@ -72,7 +72,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="justify-self-center">
+        <div className="sm:justify-self-center">
           <p className="mb-6 text-lg font-semibold">Company</p>
           <ul className="flex flex-col gap-4">
             <li>

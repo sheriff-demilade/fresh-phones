@@ -5,10 +5,10 @@ import { PHONES_DATA } from "../phone-data";
 const Category = () => {
   const { brandName } = useParams();
   return (
-    <main className="container mx-auto px-32 my-20">
+    <main className="container mx-auto px-8 my-20">
       <h2 className="text-xl mb-12 uppercase text-center">{brandName}</h2>
 
-      <div className="grid grid-cols-2 gap-20">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-20">
         {PHONES_DATA[brandName].map((phoneDetail, idx) => (
           <CategoryItem key={idx} phoneDetail={phoneDetail} />
         ))}

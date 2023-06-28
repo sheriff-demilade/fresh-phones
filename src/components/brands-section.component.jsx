@@ -18,12 +18,12 @@ const BrandsSection = () => {
         <span className="font-medium tracking-widest text-blue-400 block mb-5">
           BRANDS
         </span>
-        <h2 className="text-3xl">
+        <h2 className="sm:text-3xl text-2xl">
           Veritatis odit assumenda porro expedita illo fugiat.
         </h2>
       </div>
 
-      <div className="container mx-auto px-8 grid grid-cols-2 gap-24 items-center">
+      <div className="container mx-auto px-8 grid sm:grid-cols-2 grid-cols-1 sm:gap-24 gap-20 items-center">
         {brands.map((brand, idx) => (
           <BrandItem key={idx} idx={idx} brand={brand} />
         ))}

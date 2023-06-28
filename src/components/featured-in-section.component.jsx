@@ -6,12 +6,12 @@ import itelLogo from "../assets/itelLogo.jpg";
 
 const FeaturedInSection = () => {
   return (
-    <section className="container pt-8 mx-auto flex justify-evenly">
-      <img src={tecnoLogo} alt="tecnoLogo" className="h-16" />
-      <img src={huaweiLogo} alt="huaweiLogo" className="h-16" />
-      <img src={samsungLogo} alt="samsungLogo" className="h-16" />
-      <img src={itelLogo} alt="itelLogo" className="h-16" />
-      <img src={infinixLogo} alt="infinixLogo" className="h-16" />
+    <section className="container p-8 pb-0 mx-auto flex justify-evenly">
+      <img src={tecnoLogo} alt="tecnoLogo" className="h-6" />
+      <img src={huaweiLogo} alt="huaweiLogo" className="h-6" />
+      <img src={samsungLogo} alt="samsungLogo" className="h-6" />
+      <img src={itelLogo} alt="itelLogo" className="h-6" />
+      <img src={infinixLogo} alt="infinixLogo" className="h-6" />
     </section>
   );
 };

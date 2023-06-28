@@ -12,7 +12,7 @@ const CategoryPreview = ({ title }) => {
         {title}
       </Link>
 
-      <div className="grid grid-cols-4 gap-8">
+      <div className="grid md:grid-cols-4 grid-cols-1 md:gap-8 gap-16">
         {PHONES_DATA[title].map((phoneDetail, idx) => (
           <CategoryItem key={idx} phoneDetail={phoneDetail} />
         ))}

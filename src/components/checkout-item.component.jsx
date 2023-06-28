@@ -16,7 +16,7 @@ const CheckoutItem = ({ cartItem }) => {
     dispatch(reduceCartItemQuantity(cartItem));
 
   return (
-    <div className=" flex gap-10 items-center rounded-lg shadow hover:shadow-md duration-300 text-gray-600 bg-white overflow-hidden">
+    <div className=" flex sm:flex-row flex-col gap-10  items-center rounded-lg shadow hover:shadow-md duration-300 text-gray-600 bg-white overflow-hidden">
       <img src={imageUrl} alt={phoneName} className="h-24 w-36" />
 
       <p className=" text-xl w-52">{phoneName}</p>
