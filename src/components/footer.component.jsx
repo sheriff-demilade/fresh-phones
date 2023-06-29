@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="py-12 text-gray-500 bg-blue-50">
-      <div className="container px-8 mx-auto grid sm:grid-cols-4 grid-cols-1 gap-10">
+      <div className="container px-4 mx-auto grid sm:grid-cols-4 grid-cols-1 gap-10">
         <div className="flex flex-col	justify-between">
           <Link to="/" className="text-3xl  text-blue-300 logo">
             FreshPhones
