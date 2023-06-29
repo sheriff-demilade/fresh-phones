@@ -19,13 +19,13 @@ const HeroSection = () => {
           <div className="flex gap-4 text-xs">
             <Link
               to="/shop"
-              className="px-3 py-2 border-4 border-blue-400 rounded-lg text-white bg-blue-400 hover:bg-white hover:text-blue-400 duration-300"
+              className="px-4 py-3 rounded-lg text-white bg-blue-400 hover:bg-blue-500 duration-300 shadow"
             >
               GOTO SHOP
             </Link>
             <a
               href="#phones"
-              className="px-3 py-2 flex gap-3 items-center w-fit rounded-lg text-blue-400 border-4 border-blue-200  hover:bg-white "
+              className="px-4 py-3 rounded-lg flex gap-3 items-center w-fit bg-blue-100 shadow hover:text-blue-400"
             >
               <span>SEE PHONES</span>
               <BsArrowDown />

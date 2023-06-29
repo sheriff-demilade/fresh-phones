@@ -6,7 +6,7 @@ import itelLogo from "../assets/itelLogo.jpg";
 
 const FeaturedInSection = () => {
   return (
-    <section className="container p-4 mx-auto flex justify-between">
+    <section className="container p-7 mx-auto flex justify-between">
       <img src={tecnoLogo} alt="tecnoLogo" className="h-5 " />
       <img src={huaweiLogo} alt="huaweiLogo" className="h-5" />
       <img src={samsungLogo} alt="samsungLogo" className="h-5" />

@@ -8,18 +8,18 @@ const Header = () => {
   const toggleNav = () => setOpenNav(!openNav);
 
   return (
-    <div className="w-full text-gray-600 ">
+    <div className="w-full overflow-x-hidden text-gray-600 ">
       <header className="relative flex justify-between items-center h-16 px-4 bg-blue-50 shadow">
         <Link to="/" className="text-3xl  text-blue-300 logo">
           FreshPhones
         </Link>
 
         <nav
-          className={`bg-blue-200 absolute top-0 right-0 pl-6 pt-12 w-3/4 h-screen text-xs duration-500 ${
+          className={`bg-blue-200 absolute top-0 right-0 pl-6 pt-12 w-3/4 h-screen text-lg duration-500 ${
             openNav ? "translate-x-0" : "translate-x-full"
           }`}
         >
-          <ul className=" flex flex-col gap-2">
+          <ul className=" flex flex-col gap-4">
             <li>
               <Link
                 onClick={toggleNav}

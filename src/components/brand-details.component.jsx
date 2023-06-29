@@ -1,7 +1,7 @@
 const BrandDetails = ({ brandName }) => {
   return (
-    <div className="">
-      <h3 className="text-gray-200 sm:text-8xl text-5xl font-bold sm:mb-10 mb-5">
+    <div>
+      <h3 className="text-gray-200 sm:text-8xl text-5xl font-bold sm:mb-10 mb-3">
         {brandName}
       </h3>
       <p>

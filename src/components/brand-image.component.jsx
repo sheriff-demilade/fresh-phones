@@ -1,7 +1,7 @@
 const BrandImage = ({ brandImage, onClickHandler }) => {
   return (
     <div
-      className="relative hover:-translate-y-2 transition duration-500 cursor-pointer"
+      className="relative hover:-translate-y-2 translate-y-5 transition duration-500 cursor-pointer"
       onClick={onClickHandler}
     >
       <img
