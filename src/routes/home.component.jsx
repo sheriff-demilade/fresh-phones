@@ -13,7 +13,7 @@ import TestimonialSection from "../components/testimonial-section.component";
 
 const Home = () => {
   return (
-    <main className=" text-gray-600">
+    <main>
       <HeroSection />
       <FeaturedInSection />
       <BrandsSection />

@@ -13,17 +13,17 @@ const brands = [
 
 const BrandsSection = () => {
   return (
-    <section className="pt-20 pb-20">
-      <div className="container mx-auto px-8 mb-20 text-center">
-        <span className="font-medium tracking-widest text-blue-400 block mb-5">
+    <section className="py-10">
+      <div className="container mx-auto px-4 mb-12">
+        <span className="text-sm font-medium tracking-widest text-blue-400 block mb-2">
           BRANDS
         </span>
-        <h2 className="sm:text-3xl text-2xl">
+        <h2 className="sm:text-3xl text-lg">
           Veritatis odit assumenda porro expedita illo fugiat.
         </h2>
       </div>
 
-      <div className="container mx-auto px-8 grid sm:grid-cols-2 grid-cols-1 sm:gap-24 gap-20 items-center">
+      <div className="container mx-auto px-8 grid sm:grid-cols-2 grid-cols-1 sm:gap-24 gap-10 items-center">
         {brands.map((brand, idx) => (
           <BrandItem key={idx} idx={idx} brand={brand} />
         ))}

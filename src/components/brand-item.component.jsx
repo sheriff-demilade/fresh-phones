@@ -10,17 +10,8 @@ const BrandItem = ({ idx, brand: { brandName, brandImage } }) => {
 
   return (
     <Fragment>
-      {idx % 2 ? (
-        <Fragment>
-          <BrandDetails brandName={brandName} />
-          <BrandImage brandImage={brandImage} onClickHandler={onClickHandler} />
-        </Fragment>
-      ) : (
-        <Fragment>
-          <BrandImage brandImage={brandImage} onClickHandler={onClickHandler} />
-          <BrandDetails brandName={brandName} />
-        </Fragment>
-      )}
+      <BrandImage brandImage={brandImage} onClickHandler={onClickHandler} />
+      <BrandDetails brandName={brandName} />
     </Fragment>
   );
 };

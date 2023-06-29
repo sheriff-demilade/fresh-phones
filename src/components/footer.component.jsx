@@ -2,14 +2,14 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="py-20 text-gray-500 bg-blue-50">
-      <div className="container px-8 mx-auto grid sm:grid-cols-4 grid-cols-1 gap-20">
+    <footer className="py-12 text-gray-500 bg-blue-50">
+      <div className="container px-8 mx-auto grid sm:grid-cols-4 grid-cols-1 gap-10">
         <div className="flex flex-col	justify-between">
           <Link to="/" className="text-3xl  text-blue-300 logo">
             FreshPhones
           </Link>
 
-          <div className="flex gap-6 my-8">
+          <div className="flex gap-6 my-3">
             <Link className="duration-300 hover:text-blue-400">
               <ion-icon name="logo-facebook"></ion-icon>
             </Link>
@@ -30,9 +30,9 @@ const Footer = () => {
         </div>
 
         <div className="">
-          <p className="mb-6 text-lg font-semibold">Contact us</p>
+          <p className="mb-2 text-lg font-semibold">Contact us</p>
 
-          <address className="mb-8 not-italic">
+          <address className="mb-4 not-italic">
             224 Voluptatum, Luscuatur Uatujsbsn Lossimus.
           </address>
           <a
@@ -51,8 +51,8 @@ const Footer = () => {
         </div>
 
         <div className="sm:justify-self-center">
-          <p className="mb-6 text-lg font-semibold">Account</p>
-          <ul className="flex flex-col gap-4">
+          <p className="mb-2 text-lg font-semibold">Account</p>
+          <ul className="flex flex-col gap-2">
             <li>
               <Link className="duration-300 hover:text-blue-400">
                 Create account
@@ -73,8 +73,8 @@ const Footer = () => {
         </div>
 
         <div className="sm:justify-self-center">
-          <p className="mb-6 text-lg font-semibold">Company</p>
-          <ul className="flex flex-col gap-4">
+          <p className="mb-2 text-lg font-semibold">Company</p>
+          <ul className="flex flex-col gap-2">
             <li>
               <Link className="duration-300 hover:text-blue-400">
                 About FreshPhones
