@@ -5,7 +5,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 const PhonesSection = () => {
   return (
-    <section className="py-10 bg-blue-50">
+    <section id="phones" className="py-10 bg-blue-50">
       <div className="container mx-auto px-4 mb-12 text-center">
         <span className="text-sm font-medium tracking-widest text-blue-400 block mb-2">
           PHONES

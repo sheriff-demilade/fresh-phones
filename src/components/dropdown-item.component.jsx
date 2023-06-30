@@ -1,5 +1,3 @@
-import React from "react";
-
 const DropdownItem = ({
   cartItem: { phoneName, price, quantity, imageUrl },
 }) => {

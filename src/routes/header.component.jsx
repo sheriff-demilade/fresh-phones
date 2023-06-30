@@ -19,14 +19,14 @@ const Header = () => {
   const toggleCartDropdown = () => setOpenCart(!openCart);
 
   return (
-    <div className="w-full overflow-x-hidden text-gray-600 ">
+    <div className="w-full overflow-x-hidden text-gray-600">
       <header className="relative flex justify-between items-center h-16 px-4 bg-blue-50 shadow">
         <Link to="/" className="text-2xl  text-blue-300 logo">
           FreshPhones
         </Link>
 
         <nav
-          className={`bg-blue-100 absolute top-0 right-0 pl-6 pt-4 w-3/4 h-screen font-medium duration-500 ease-in-out ${
+          className={`bg-blue-100 absolute top-0 right-0 pl-6 pt-4 w-3/4 h-screen font-medium duration-500 ease-in-out rounded-bl-lg ${
             openNav ? "translate-x-0" : "translate-x-full"
           }`}
         >
@@ -69,7 +69,7 @@ const Header = () => {
               <Link
                 onClick={toggleNav}
                 to="/login"
-                className="inline-block px-4 py-1 rounded-md text-white bg-blue-400 hover:bg-white hover:text-blue-400 hover:outline outline-1 outline-blue-400 transition duration-300 shadow mb-10"
+                className="inline-block px-4 py-1 rounded-md text-white bg-blue-400 hover:bg-white hover:text-blue-400 hover:outline outline-1 outline-blue-400 transition duration-300 shadow mb-6"
               >
                 Login
               </Link>
