@@ -14,11 +14,11 @@ const brands = [
 const BrandsSection = () => {
   return (
     <section className="py-10">
-      <div className="container mx-auto px-4 mb-12">
+      <div className="container mx-auto px-4 mb-12 text-center">
         <span className="text-sm font-medium tracking-widest text-blue-400 block mb-2">
           BRANDS
         </span>
-        <h2 className="sm:text-3xl text-lg">
+        <h2 className="text-lg">
           Veritatis odit assumenda porro expedita illo fugiat.
         </h2>
       </div>
