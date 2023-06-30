@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import { useNavigate } from "react-router-dom";
 import BrandDetails from "./brand-details.component";
 import BrandImage from "./brand-image.component";
@@ -9,10 +8,10 @@ const BrandItem = ({ idx, brand: { brandName, brandImage } }) => {
   const onClickHandler = () => navigate(`shop/${brandName}`);
 
   return (
-    <Fragment>
+    <div className="flex flex-col gap-8">
       <BrandImage brandImage={brandImage} onClickHandler={onClickHandler} />
       <BrandDetails brandName={brandName} />
-    </Fragment>
+    </div>
   );
 };
 

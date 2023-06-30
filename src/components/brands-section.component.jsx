@@ -23,7 +23,7 @@ const BrandsSection = () => {
         </h2>
       </div>
 
-      <div className="container mx-auto px-8 grid sm:grid-cols-2 grid-cols-1 sm:gap-24 gap-10 items-center">
+      <div className="container mx-auto px-4 flex flex-col gap-14 items-center">
         {brands.map((brand, idx) => (
           <BrandItem key={idx} idx={idx} brand={brand} />
         ))}

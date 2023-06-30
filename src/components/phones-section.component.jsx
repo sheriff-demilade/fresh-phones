@@ -15,7 +15,7 @@ const PhonesSection = () => {
         </h2>
       </div>
 
-      <div className="container mx-auto px-4 grid sm:grid-cols-4 grid-cols-1 gap-x-8  gap-y-11">
+      <div className="container mx-auto px-4 grid grid-cols-1 gap-12">
         {Object.values(PHONES_DATA).map((brands) =>
           brands
             .filter((phone, idx) => idx % 2)
