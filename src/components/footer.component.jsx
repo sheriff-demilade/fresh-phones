@@ -3,8 +3,8 @@ import { BsFacebook, BsTwitter, BsWhatsapp, BsInstagram } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <footer className="py-12 text-gray-500 bg-blue-50">
-      <div className="container px-4 mx-auto grid grid-cols-1 gap-10">
+    <footer className="py-14 text-gray-500 bg-blue-50">
+      <div className="container px-4 sm:px-8 mx-auto grid grid-cols-1 sm:grid-cols-2 gap-10">
         <div>
           <p className="mb-2 text-lg font-semibold">Account</p>
           <ul className="flex flex-col gap-2">

@@ -5,7 +5,7 @@ import { PHONES_DATA } from "../phone-data";
 const Category = () => {
   const { brandName } = useParams();
   return (
-    <main className="container mx-auto px-8 my-20">
+    <main className="container mx-auto px-4 py-14">
       <h2 className="text-xl mb-12 uppercase text-center">{brandName}</h2>
 
       <div className="grid md:grid-cols-2 grid-cols-1 gap-20">

@@ -20,7 +20,7 @@ const Header = () => {
 
   return (
     <div className="w-full overflow-x-hidden text-gray-600">
-      <header className="relative flex justify-between items-center h-16 px-4 bg-blue-50 shadow">
+      <header className="relative flex justify-between items-center h-16 px-4 sm:px-8 bg-blue-50 shadow">
         <Link to="/" className="text-2xl  text-blue-300 logo">
           FreshPhones
         </Link>
@@ -28,7 +28,7 @@ const Header = () => {
         <nav
           className={`bg-blue-100 absolute top-0 right-0 pl-6 pt-4 w-3/4 h-screen font-medium duration-500 ease-in-out rounded-bl-lg ${
             openNav ? "translate-x-0" : "translate-x-full"
-          }`}
+          } z-10`}
         >
           <ul className=" flex flex-col-reverse gap-4">
             <li>
@@ -49,6 +49,7 @@ const Header = () => {
                 Shop
               </Link>
             </li>
+
             <li className="relative">
               <div
                 className="hover:text-blue-400 transition duration-300 relative inline-block"
@@ -77,10 +78,7 @@ const Header = () => {
           </ul>
         </nav>
 
-        <button
-          onClick={toggleNav}
-          className="md:hidden hover:text-blue-400 z-20"
-        >
+        <button onClick={toggleNav} className="hover:text-blue-400 z-20">
           {!openNav ? <BsList size={24} /> : <BsXLg size={24} />}
         </button>
       </header>

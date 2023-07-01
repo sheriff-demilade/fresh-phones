@@ -13,8 +13,8 @@ const brands = [
 
 const BrandsSection = () => {
   return (
-    <section className="py-10">
-      <div className="container mx-auto px-4 mb-12 text-center">
+    <section id="brands" className="pb-14 pt-10">
+      <div className="container mx-auto px-4 sm:px-8 mb-12 text-center">
         <span className="text-sm font-medium tracking-widest text-blue-400 block mb-2">
           BRANDS
         </span>
@@ -23,7 +23,7 @@ const BrandsSection = () => {
         </h2>
       </div>
 
-      <div className="container mx-auto px-4 flex flex-col gap-14 items-center">
+      <div className="container mx-auto px-4 sm:px-8 flex flex-col gap-16 items-center">
         {brands.map((brand, idx) => (
           <BrandItem key={idx} idx={idx} brand={brand} />
         ))}

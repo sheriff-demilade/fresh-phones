@@ -4,7 +4,7 @@ import ShopButton from "./shop-button.component";
 const HeroSection = () => {
   return (
     <section className="py-14 bg-blue-50">
-      <div className="container mx-auto px-4 grid grid-cols-1 gap-9 items-center">
+      <div className="container mx-auto px-4 sm:px-8 grid grid-cols-1 gap-9 items-center">
         <div>
           <img
             src="https://plus.unsplash.com/premium_photo-1682065724607-22877c1b6983?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fG1vYmlsZSUyMHBob25lc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60"
@@ -16,7 +16,7 @@ const HeroSection = () => {
           <h2 className="text-2xl font-medium mb-3">
             Lorem ipsum dolor sit amet bonjour elit.
           </h2>
-          <p className="mb-8">
+          <p className="mb-9">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
             laboriosam minus labore repellat similique dicta reiciendis
             repudiandae autem. Voluptas adipisci eligendi veritatis facilis, non

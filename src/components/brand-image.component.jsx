@@ -1,7 +1,7 @@
 const BrandImage = ({ brandImage, onClickHandler }) => {
   return (
     <div
-      className="relative hover:-translate-y-2 duration-500 cursor-pointer"
+      className="relative max-w-sm sm:max-w-md self-center hover:-translate-y-2 duration-500 cursor-pointer"
       onClick={onClickHandler}
     >
       <img src={brandImage} alt="Mobile phone" className=" w-2/3 mx-auto" />
