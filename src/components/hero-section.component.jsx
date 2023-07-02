@@ -3,27 +3,27 @@ import ShopButton from "./shop-button.component";
 
 const HeroSection = () => {
   return (
-    <section className="py-14 md:py-16 bg-blue-50">
-      <div className="container mx-auto px-4 sm:px-8 grid grid-cols-1 md:grid-cols-2 gap-9 md:gap-12 items-center">
+    <section className="py-14 md:py-16 lg:py-20 bg-blue-50">
+      <div className="container mx-auto px-4 sm:px-8 grid grid-cols-1 md:grid-cols-2 gap-9 md:gap-12 lg:gap-16 items-center">
         <div className="md:col-start-2">
           <img
             src="https://plus.unsplash.com/premium_photo-1682065724607-22877c1b6983?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fG1vYmlsZSUyMHBob25lc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60"
             alt="Mobile phone"
-            className="w-full rounded-lg mx-auto"
+            className="w-full rounded-lg lg:rounded-2xl mx-auto xl:w-4/5"
           />
         </div>
         <div className="md:col-start-1 md:row-start-1">
-          <h2 className="text-2xl font-medium mb-3">
+          <h2 className="text-2xl lg:text-3xl font-medium mb-3 lg:mb-4">
             Lorem ipsum dolor sit amet bonjour elit.
           </h2>
-          <p className="mb-9">
+          <p className="mb-9 lg:mb-10">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
             laboriosam minus labore repellat similique dicta reiciendis
             repudiandae autem. Voluptas adipisci eligendi veritatis facilis, non
             iure velit doloribus nesciunt in dignissimos.
           </p>
 
-          <div className="flex gap-4 text-xs font-medium">
+          <div className="flex gap-4 text-xs lg:text-sm font-medium">
             <ShopButton />
             <a
               href="#phones"

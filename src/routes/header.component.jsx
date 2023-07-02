@@ -19,9 +19,9 @@ const Header = () => {
   const toggleCartDropdown = () => setOpenCart(!openCart);
 
   return (
-    <div className="w-full overflow-x-hidden text-gray-600">
-      <header className="relative flex justify-between items-center h-16 px-4 sm:px-8 bg-blue-50 shadow">
-        <Link to="/" className="text-2xl  text-blue-300 logo">
+    <div className="w-full overflow-x-hidden text-gray-600 lg:text-lg">
+      <header className="relative flex justify-between items-center h-16 xl:h-20 px-4 sm:px-8 xl:px-10 bg-blue-50 shadow">
+        <Link to="/" className="text-2xl lg:text-3xl  text-blue-300 logo">
           FreshPhones
         </Link>
 
@@ -50,7 +50,7 @@ const Header = () => {
               </Link>
             </li>
 
-            <li className="relative">
+            <li className="relative md:self-end">
               <div
                 className="hover:text-blue-400 transition duration-300 relative inline-block"
                 onClick={toggleCartDropdown}

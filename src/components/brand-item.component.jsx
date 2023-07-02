@@ -9,7 +9,7 @@ const BrandItem = ({ idx, brand: { brandName, brandImage } }) => {
 
   return (
     <div
-      className={`flex flex-col md:flex-row gap-8 md:gap-12 md:justify-center md:items-center md:${
+      className={`flex flex-col md:flex-row gap-8 md:gap-12 lg:gap-20 md:justify-center md:items-center md:${
         idx % 2 ? "flex-row-reverse" : ""
       }`}
     >

@@ -3,9 +3,9 @@ import { BsFacebook, BsTwitter, BsWhatsapp, BsInstagram } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <footer className="py-14 md:py-16 text-gray-500 bg-blue-50">
-      <div className="container px-4 sm:px-8 mx-auto grid grid-cols-1 sm:grid-cols-2 sm:gap-x-12 sm:gap-y-14 gap-10">
-        <div>
+    <footer className="py-14 md:py-16 lg:py-20 text-gray-500 bg-blue-50">
+      <div className="container px-4 sm:px-8 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 sm:gap-x-12 sm:gap-y-14 gap-10 lg:gap-8">
+        <div className="lg:justify-self-center">
           <p className="mb-2 text-lg font-semibold">Account</p>
           <ul className="flex flex-col gap-2">
             <li>
@@ -72,8 +72,8 @@ const Footer = () => {
           </a>
         </div>
 
-        <div className="flex flex-col	justify-between">
-          <Link to="/" className="text-2xl  text-blue-300 logo">
+        <div className="flex flex-col	justify-between lg:col-start-1 lg:row-start-1">
+          <Link to="/" className="text-2xl lg:text-3xl text-blue-300 logo">
             FreshPhones
           </Link>
 
