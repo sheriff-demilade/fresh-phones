@@ -1,6 +1,6 @@
 const BrandDetails = ({ brandName }) => {
   return (
-    <div>
+    <div className="md:w-1/2">
       <h3 className="text-gray-200 text-5xl font-bold mb-3">{brandName}</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas

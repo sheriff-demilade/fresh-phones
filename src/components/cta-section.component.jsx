@@ -2,18 +2,18 @@ import newsLetter from "../assets/newsLetter.jpg";
 
 function CtaSection() {
   return (
-    <section className="pt-6 pb-16 ">
+    <section className="pt-6 md:pt-14 pb-16 md:pb-24 ">
       <div className="px-4 sm:px-8 container mx-auto">
-        <div className="bg-gradient-to-br from-blue-100 to-blue-400 grid grid-cols-1 rounded-xl overflow-hidden shadow-xl">
+        <div className="bg-gradient-to-br from-blue-50 to-blue-400 grid grid-cols-1 md:grid-cols-5 rounded-xl overflow-hidden shadow-xl">
           <div
             style={{
               backgroundImage: ` url(${newsLetter})`,
               backgroundSize: "cover",
-              backgroundPosition: "right 20% top 35%",
+              backgroundPosition: "right 20% top 33%",
             }}
-            className="h-60 sm:h-80"
+            className="h-64 sm:h-80 md:col-span-2 md:h-auto"
           ></div>
-          <div className="px-4 sm:px-8 py-8 sm:py-10">
+          <div className="px-4 sm:px-8 py-8 sm:py-10 md:col-span-3">
             <h3 className="text-xl mb-2">
               Lorem ipsum dolor sit amet consectetur
             </h3>

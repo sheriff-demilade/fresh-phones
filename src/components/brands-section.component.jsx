@@ -13,8 +13,8 @@ const brands = [
 
 const BrandsSection = () => {
   return (
-    <section id="brands" className="pb-14 pt-10">
-      <div className="container mx-auto px-4 sm:px-8 mb-12 text-center">
+    <section id="brands" className="pb-14 md:pb-16 pt-10 md:pt-14">
+      <div className="container mx-auto px-4 sm:px-8 mb-12 md:mb-14 text-center">
         <span className="text-sm font-medium tracking-widest text-blue-400 block mb-2">
           BRANDS
         </span>

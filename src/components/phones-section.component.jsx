@@ -5,7 +5,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 const PhonesSection = () => {
   return (
-    <section id="phones" className="py-14 bg-blue-50">
+    <section id="phones" className="py-14 md:py-16 bg-blue-50">
       <div className="container mx-auto px-4 sm:px-8 mb-12 text-center">
         <span className="text-sm font-medium tracking-widest text-blue-400 block mb-2">
           PHONES
@@ -13,7 +13,7 @@ const PhonesSection = () => {
         <h2 className="text-lg">Est provident culpa nobis in nemo mollitia.</h2>
       </div>
 
-      <div className="container mx-auto px-4 sm:px-8 grid grid-cols-1 sm:grid-cols-2 sm:gap-y-16 gap-12">
+      <div className="container mx-auto px-4 sm:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-x-8 sm:gap-y-16 gap-12 ">
         {Object.values(PHONES_DATA).map((brands) =>
           brands
             .filter((phone, idx) => idx % 2)

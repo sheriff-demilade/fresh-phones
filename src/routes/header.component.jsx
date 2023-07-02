@@ -26,11 +26,11 @@ const Header = () => {
         </Link>
 
         <nav
-          className={`bg-blue-100 absolute top-0 right-0 pl-6 pt-4 w-3/4 h-screen font-medium duration-500 ease-in-out rounded-bl-lg ${
+          className={`bg-blue-100 absolute top-0 right-0 pl-6 pt-4 w-3/4 h-screen font-medium md:font-normal duration-500 ease-in-out rounded-bl-lg ${
             openNav ? "translate-x-0" : "translate-x-full"
-          } z-10`}
+          } z-10 md:relative md:h-auto md:w-auto md:p-0 md:bg-transparent md:translate-x-0`}
         >
-          <ul className=" flex flex-col-reverse gap-4">
+          <ul className=" flex flex-col-reverse gap-4 md:flex-row md:items-center md:gap-8">
             <li>
               <Link
                 onClick={toggleNav}
@@ -70,7 +70,7 @@ const Header = () => {
               <Link
                 onClick={toggleNav}
                 to="/login"
-                className="inline-block px-4 py-1 rounded-md text-white bg-blue-400 hover:bg-white hover:text-blue-400 hover:outline outline-1 outline-blue-400 transition duration-300 shadow mb-6"
+                className="inline-block px-4 py-1 rounded-md text-white bg-blue-400 hover:bg-white hover:text-blue-400 hover:outline outline-1 outline-blue-400 transition duration-300 shadow mb-6 md:mb-0"
               >
                 Login
               </Link>
@@ -78,7 +78,10 @@ const Header = () => {
           </ul>
         </nav>
 
-        <button onClick={toggleNav} className="hover:text-blue-400 z-20">
+        <button
+          onClick={toggleNav}
+          className="hover:text-blue-400 z-20 sm:hidden"
+        >
           {!openNav ? <BsList size={24} /> : <BsXLg size={24} />}
         </button>
       </header>
