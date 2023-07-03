@@ -26,7 +26,7 @@ const Header = () => {
         </Link>
 
         <nav
-          className={`bg-blue-100 absolute top-0 right-0 pl-6 pt-4 w-3/4 h-screen font-medium md:font-normal duration-500 ease-in-out rounded-bl-lg ${
+          className={`bg-blue-100 absolute top-0 right-0 pl-6 pt-4 w-3/4 h-screen font-medium md:text-gray-500 duration-500 ease-in-out rounded-bl-lg ${
             openNav ? "translate-x-0" : "translate-x-full"
           } z-10 md:relative md:h-auto md:w-auto md:p-0 md:bg-transparent md:translate-x-0`}
         >
@@ -80,7 +80,7 @@ const Header = () => {
 
         <button
           onClick={toggleNav}
-          className="hover:text-blue-400 z-20 sm:hidden"
+          className="hover:text-blue-400 z-20 md:hidden"
         >
           {!openNav ? <BsList size={24} /> : <BsXLg size={24} />}
         </button>

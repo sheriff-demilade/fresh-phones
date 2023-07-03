@@ -9,7 +9,7 @@ const CartDropdown = ({ handleClick }) => {
   const total = useSelector(totalPrice);
 
   return (
-    <div className=" w-72 p-4 shadow-md absolute top-9 sm:top-0 md:top-16 md:-left-4 left-1/4 sm:left-1/2 -translate-x-1/2 font-normal bg-blue-50 rounded-lg z-20">
+    <div className=" w-72 md:w-80 p-4 shadow-md absolute top-9 sm:top-0 md:top-16 md:-left-4 left-1/4 sm:left-1/2 -translate-x-1/2 font-normal bg-blue-50 rounded-lg z-20">
       {cartItems.length ? (
         <div>
           <div className="min-h-fit max-h-64 overflow-y-scroll flex flex-col gap-4">

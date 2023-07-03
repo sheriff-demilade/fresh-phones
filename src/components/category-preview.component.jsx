@@ -6,11 +6,14 @@ import { BsArrowRight } from "react-icons/bs";
 const CategoryPreview = ({ title }) => {
   return (
     <div className="mb-12">
-      <h3 className="inline-block text-xl font-medium mb-6 uppercase text-blue-400">
+      <h3 className="inline-block text-xl font-medium mb-10 uppercase text-blue-400">
         {title}
       </h3>
 
-      <div className="grid md:grid-cols-4 grid-cols-1 md:gap-8 gap-16">
+      <div
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:gap-x-8 sm:gap-y-16 gap-12
+      "
+      >
         {PHONES_DATA[title].map((phoneDetail, idx) => (
           <CategoryItem key={idx} phoneDetail={phoneDetail} />
         ))}
